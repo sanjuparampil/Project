@@ -15,7 +15,7 @@ training_stocks = ['BP.L', 'ULVR.L', 'GSK.L', 'HSBA.L', 'DGE.L']
 testing_stocks = ['AZN.L', 'VOD.L', 'BARC.L', 'RR.L', 'TSCO.L']
 
 # Function to download and save data to Excel
-def download_and_save_data_to_excel(stock_list, start_date, end_date, folder_name):
+def to_excel(stock_list, start_date, end_date, folder_name):
     for stock in stock_list:
         print(f"Downloading data for {stock}")
         df = yf.download(stock, start=start_date, end=end_date)
@@ -27,8 +27,8 @@ def download_and_save_data_to_excel(stock_list, start_date, end_date, folder_nam
         print(f"Data for {stock} saved to {file_name}")
 
 # Download data for training and testing and save to Excel
-download_and_save_data_to_excel(training_stocks, '2014-01-01', '2023-12-31', training_dir)
-download_and_save_data_to_excel(testing_stocks, '2024-01-01', '2024-03-31', testing_dir)
+to_excel(training_stocks, '2014-01-01', '2023-12-31', training_dir)
+to_excel(testing_stocks, '2024-01-01', '2024-03-31', testing_dir)
 
 print("All data downloaded and saved to Excel files.")
 
