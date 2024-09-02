@@ -17,4 +17,4 @@ The machine learning models used for this project are:
 - Mean Absolute Error (MAE)
 
 ## Results
-It was evident that Random Forest has the lowest errors on comparison. Then prediction for the next 3 months was done using this model. Out of 5 testing stocks, the model was able to predict 4 stocks well i.e. BARC.L, RR.L, TSCO.L and VOD.L whereas that of AZN.L was not accurate. 
+After comapring, random forest had lowest errors. Predictions were done using the model. 
